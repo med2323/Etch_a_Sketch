@@ -1,0 +1,94 @@
+/* Basic reset for margin, padding, and box-sizing */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Flexbox layout for the body to center content */
+body {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    min-height: 100vh; /* Minimum height to cover the viewport */
+    font-family: Arial, sans-serif; /* Set font family */
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+/* Centered header with margin */
+header {
+    text-align: center; /* Center text */
+    margin: 20px 0; /* Vertical margin */
+}
+
+/* Flex container to center the grid and controls */
+.container {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items horizontally */
+    flex-grow: 1; /* Allow container to grow */
+}
+
+/* Etch-a-Sketch container with fixed dimensions and border */
+#etch-a-sketch {
+    width: 400px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    position: relative; /* Relative positioning */
+    border: 2px solid #333; /* Dark border */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Grid container styled with CSS Grid */
+#container {
+    display: grid; /* CSS Grid layout */
+    grid-template-columns: repeat(16, 1fr); /* 16 equal columns */
+    grid-template-rows: repeat(16, 1fr); /* 16 equal rows */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Individual grid items styled with border and background color */
+.grid-item {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: 1px solid #ddd; /* Light border */
+    background-color: #fff; /* White background */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Controls styling for buttons and color picker */
+.controls {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Button styling */
+.controls button,
+.controls input[type="color"] {
+    padding: 10px 20px; /* Padding inside the button */
+    margin: 0 5px; /* Horizontal margin between buttons */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+/* Button hover effect */
+.controls button:hover,
+.controls input[type="color"]:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}
+
+/* Footer styling to appear at the bottom of the page */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Vertical padding */
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push footer to the bottom */
+}
