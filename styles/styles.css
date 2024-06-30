@@ -14,19 +14,33 @@ body {
     background-color: #f0f0f0; /* Light grey background */
 }
 
-/* Centered header with margin */
-header {
-    text-align: center; /* Center text */
-    margin: 20px 0; /* Vertical margin */
+.tit {
+    text-align: center; /* Center the container */
+    margin: 20px 0; /* Add some margin around the container */
 }
 
+ .titi {
+    display: inline-block; /* Ensure border only surrounds text */
+    border: 2px solid #333;
+    padding: 5px 10px; /* Add padding for space inside the border */
+    border-radius: 2%; 
+ }
+
+ .titic{
+    display: inline-block; /* Ensure border only surrounds text */
+    border: 2px solid #333;
+    padding: 5px 10px; /* Add padding for space inside the border */
+    border-radius: 2%; 
+ }
+
+
 /* Flex container to center the grid and controls */
-.container {
+ .container {
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Column layout */
-    align-items: center; /* Center items horizontally */
+    align-items:center; /* Center items horizontally */
     flex-grow: 1; /* Allow container to grow */
-}
+ }
 
 /* Etch-a-Sketch container with fixed dimensions and border */
 #etch-a-sketch {
@@ -80,14 +94,16 @@ header {
 /* Button hover effect */
 .controls button:hover,
 .controls input[type="color"]:hover {
-    background-color: #0056b3; /* Darker blue background on hover */
+    background-color: #7a93ad; /* Darker blue background on hover */
 }
 
 /* Footer styling to appear at the bottom of the page */
 footer {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    text-align: center; /* Center text */
+    background-color: #d16868; /* Dark background */
+    color: #662727; /* White text */
+    text-align: center; 
+    text-shadow: 2px 2px 5px gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 10px 0; /* Vertical padding */
     width: 100%; /* Full width */
     margin-top: auto; /* Push footer to the bottom */
